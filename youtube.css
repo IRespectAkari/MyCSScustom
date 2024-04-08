@@ -1,0 +1,125 @@
+/* コメント欄の右側固定表示化 */
+#comments {
+  /* position: fixed;
+  right: 0;
+  top: 70px;
+  width: 440px;
+  height: calc(100vh - 54px);
+  overflow: scroll; */
+}
+
+/* 関連動画リスト */
+#secondary 
+{
+  /* visibility: hidden; */
+  /* position: fixed;
+  left: 0;
+  width: 853px;
+  height: 200px;
+  padding: 24px 24px 0 0;
+  margin-left: 24px;
+  overflow: scroll; */
+}
+
+/* #primary {
+  position: fixed;
+  left: 0;
+} */
+
+/* 音量の色 */
+.ytp-volume-slider-handle:before {
+  background-color: skyblue;
+}
+/* 音量の背景色 */
+.ytp-volume-slider-handle:after {
+  background-color: blue;
+}
+/* 「オフライン」ボタンの削除 */
+/* 「クリップ」ボタンの削除 */
+#menu button[aria-label="オフライン"]
+,#menu button[aria-label="クリップ"]
+{
+  display: none;
+}
+
+/*ボタンの間隔を狭くする*/
+#menu button {
+  padding: 0 5px;
+}
+
+/* 一時的に非表示にする */
+video.video-stream.html5-main-video {
+  /* display: none; */
+}
+/*左メニューの「ライブ（探索）」削除*/
+ytd-guide-entry-renderer:has(a#endpoint[title="ライブ"]) {
+  /* display: none; */
+}
+
+/*【角丸廃止】サムネイル,終了画面,再生リストや検索ボックス,動画後に一覧で表示されるおすすめ動画,動画プレーヤー*/
+a#thumbnail,
+.ytp-ce-video.ytp-ce-large-round, .ytp-ce-playlist.ytp-ce-large-round, .ytp-ce-large-round .ytp-ce-expanding-overlay-background,
+div#container, button[aria-label="検索"],
+div[style^="background-image: url"],
+ytd-player#ytd-player {
+    border-radius: 0 !important;
+}
+/*プレイリスト内の現在再生している動画の背景色*/
+ytd-playlist-panel-video-renderer[selected] {
+  /* background-color: #cd1212 !important; */
+  background-color: #0d52a2 !important;
+}
+/*プレイリスト内の現在再生している動画の文字色（タイトル名）*/
+ytd-playlist-panel-video-renderer[selected] #video-title {
+  color: #0ff !important;
+}
+
+/*左メニューの「ホーム」削除*/
+/*左メニューの「ショート」削除*/
+/*左メニューの「Originals」削除*/
+/*左メニューの「履歴」削除*/
+/*左メニューの「自分の動画」削除*/
+/*左メニューの「後で見る」削除*/
+/*左メニューの「オフライン」削除*/
+/*左メニューの「自分のクリップ」削除*/
+/*左メニューの「急上昇（探索）」削除*/
+/*左メニューの「音楽（探索）」削除*/
+/*左メニューの「ゲーム（探索）」削除*/
+/*左メニューの「ニュース（探索）」削除*/
+/*左メニューの「スポーツ（探索）」削除*/
+/*左メニューの「学び（探索）」削除*/
+/*左メニューの「YouTube Premium」削除*/
+/*左メニューの「YouTube Studio」削除*/
+/*左メニューの「YouTube Kids」削除*/
+/*左メニューの「ヘルプ」削除*/
+/*左メニューのフッター削除*/
+ytd-guide-entry-renderer:has(a#endpoint[title="ホーム"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="ショート"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="Originals"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="履歴"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="作成した動画"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="自分の動画"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="後で見る"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="高く評価した動画"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="オフライン"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="自分のクリップ"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="急上昇"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="音楽"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="ムービー＆TV"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="ゲーム"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="ニュース"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="スポーツ"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="学び"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="YouTube Premium"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="YouTube Studio"]),
+ytd-guide-entry-renderer:has(a#endpoint[title="YouTube Kids"]),
+#guide-content #footer,
+ytd-guide-entry-renderer:has(a#endpoint[title="ヘルプ"]) {
+  display: none;
+}
+
+/* 共有の文字削除 */
+#menu #top-level-buttons-computed button .yt-core-attributed-string {
+  display: none;
+}
+
