@@ -3,7 +3,7 @@ a.focus {
   background-color: royalblue;
 }
 
-/* Chromeのダークモード時に画像が白くて見えなくなる事への対策 */
+/* Chromeのダークモード対策 */
 p a img {
   background-color: gray;
 }
@@ -22,5 +22,5 @@ div.mdContent-inner a {
 
 /* h1~6へのホバー時にポインターになるのを防ぐ */
 :is(h1, h2, h3, h4, h5, h6):has(a) {
-  cursor: default;
+  cursor: text;
 }
