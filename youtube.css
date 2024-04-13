@@ -26,6 +26,10 @@
   left: 0;
 } */
 
+/* 音量の丸の大きさ */
+.ytp-volume-slider-handle {
+  width: 0;
+}
 /* 音量の色 */
 .ytp-volume-slider-handle:before {
   background-color: skyblue;
